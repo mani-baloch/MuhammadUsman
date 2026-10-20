@@ -43,7 +43,7 @@ export default function Hero() {
           {/* Portrait Image with natural gradient blend into the dark canvas */}
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero-portrait-v2.png"
+              src="/images/hero-portrait-usman.png"
               alt="Muhammad Usman — Web Designer & Digital Creator"
               fill
               priority
