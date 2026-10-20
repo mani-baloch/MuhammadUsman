@@ -12,51 +12,51 @@ export default function Hero() {
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 pt-2 pb-12 overflow-visible">
       {/* Container holding the massive PORTFOLIO typography and overlapping portrait */}
-      <div className="relative w-full flex flex-col items-center justify-start min-h-[520px] md:min-h-[620px] lg:min-h-[700px]">
-        {/* Background Massive Condensed Text: "PORTFOLIO" */}
+      <div className="relative w-full flex flex-col items-center justify-start min-h-[560px] md:min-h-[690px] lg:min-h-[780px]">
+        {/* Background Massive Condensed Text: "PORTFOLIO" (Vertically elongated like reference) */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full text-center select-none pointer-events-none z-0 mt-0"
+          className="w-full text-center select-none pointer-events-none z-0 mt-0 overflow-visible"
         >
           <h1
-            className="font-bebas text-[20vw] sm:text-[19vw] md:text-[180px] lg:text-[215px] xl:text-[240px] leading-[0.82] tracking-[0.04em] sm:tracking-[0.08em] md:tracking-[0.11em] text-[#E8D0B2] opacity-90 transition-all font-normal whitespace-nowrap"
+            className="font-bebas text-[22vw] sm:text-[21vw] md:text-[200px] lg:text-[240px] xl:text-[270px] leading-[0.76] tracking-[0.05em] sm:tracking-[0.08em] md:tracking-[0.11em] text-[#E8D0B2] opacity-90 transition-all font-normal whitespace-nowrap transform scale-y-[1.32] md:scale-y-[1.44] origin-top"
             style={{
-              textShadow: "0 10px 40px rgba(0,0,0,0.8)",
+              textShadow: "0 10px 40px rgba(0,0,0,0.85)",
             }}
           >
             {profile.heroHeading}
           </h1>
         </motion.div>
 
-        {/* Central Overlapping Portrait of Muhammad Usman */}
+        {/* Central Overlapping Portrait of Muhammad Usman with full broad shoulders & style */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="absolute top-0 sm:-top-2 md:-top-4 z-10 w-[280px] sm:w-[350px] md:w-[420px] lg:w-[470px] h-[380px] sm:h-[480px] md:h-[570px] lg:h-[640px] pointer-events-none"
+          className="absolute top-0 sm:-top-2 md:-top-4 z-10 w-[320px] sm:w-[410px] md:w-[520px] lg:w-[600px] xl:w-[640px] h-[430px] sm:h-[550px] md:h-[680px] lg:h-[760px] xl:h-[820px] pointer-events-none"
         >
           {/* Subtle warm backlight glow behind subject */}
-          <div className="absolute inset-0 -top-8 bg-gradient-to-b from-[#C99A5B]/15 via-transparent to-transparent blur-3xl rounded-full transform -translate-y-6" />
+          <div className="absolute inset-0 -top-8 bg-gradient-to-b from-[#C99A5B]/20 via-transparent to-transparent blur-3xl rounded-full transform -translate-y-6" />
 
           {/* Portrait Image with natural gradient blend into the dark canvas */}
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero-portrait-usman.png"
+              src="/images/hero-portrait-styled.png"
               alt="Muhammad Usman — Web Designer & Digital Creator"
               fill
               priority
-              sizes="(max-width: 640px) 280px, (max-width: 768px) 350px, (max-width: 1024px) 420px, 470px"
+              sizes="(max-width: 640px) 320px, (max-width: 768px) 410px, (max-width: 1024px) 520px, 640px"
               className="object-contain object-top drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
             />
             {/* Smooth bottom fade mask so blazer blends seamlessly into the dark page */}
-            <div className="absolute inset-x-0 bottom-0 h-28 md:h-36 bg-gradient-to-t from-[#101010] via-[#101010]/80 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-32 md:h-44 bg-gradient-to-t from-[#101010] via-[#101010]/80 to-transparent pointer-events-none" />
           </div>
         </motion.div>
 
         {/* Lower Left & Lower Right Content Row */}
-        <div className="relative z-20 w-full mt-auto pt-[230px] sm:pt-[280px] md:pt-[330px] lg:pt-[380px] grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-4 items-end">
+        <div className="relative z-20 w-full mt-auto pt-[270px] sm:pt-[330px] md:pt-[400px] lg:pt-[470px] grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-4 items-end">
           {/* Lower Left Hero Column */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
