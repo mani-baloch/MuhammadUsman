@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #101010;
+  --secondary-bg: #151515;
+  --foreground: #E8D0B2;
+  --primary-gold: #C99A5B;
+  --border-gold: #796143;
+  --muted-sand: #B9AA98;
+}
+
+@theme {
+  --color-luxury-black: #101010;
+  --color-luxury-card: #151515;
+  --color-luxury-beige: #E8D0B2;
+  --color-luxury-gold: #C99A5B;
+  --color-luxury-border: #796143;
+  --color-luxury-muted: #B9AA98;
+  --font-bebas: var(--font-bebas), "Bebas Neue", sans-serif;
+  --font-inter: var(--font-inter), "Inter", sans-serif;
+  --font-signature: var(--font-signature), "Alex Brush", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #101010;
+}
+
+body {
+  background-color: #101010;
+  color: #E8D0B2;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #C99A5B;
+  color: #101010;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+::-webkit-scrollbar-thumb {
+  background: #796143;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99A5B;
+}
+
+.font-bebas {
+  font-family: var(--font-bebas), "Bebas Neue", sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), "Inter", sans-serif;
+}
+
+.font-signature {
+  font-family: var(--font-signature), "Alex Brush", cursive;
+}
+
+/* Subtle gold glow utility */
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(201, 154, 91, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 30px -5px rgba(201, 154, 91, 0.25);
+}
+
+/* Fine border gold */
+.border-gold-subtle {
+  border-color: rgba(121, 97, 67, 0.45);
+}
