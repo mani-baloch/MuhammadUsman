@@ -45,14 +45,14 @@ export interface SocialLink {
 export const portfolioConfig = {
   profile: {
     name: "Muhammad Usman",
-    role: "Web Designer & Frontend Developer",
-    headerTitle1: "WEB DESIGNER",
-    headerTitle2: "& DIGITAL CREATOR",
+    role: "Web Developer & Data Science Student",
+    headerTitle1: "WEB DEVELOPER",
+    headerTitle2: "& DATA SCIENCE STUDENT",
     heroHeading: "PORTFOLIO",
     heroLeftSubtitle: "CREATIVE",
-    heroLeftTitle: "WEB DESIGNER",
+    heroLeftTitle: "WEB DEVELOPER",
     heroDescription:
-      "I design and build modern, high-converting websites that blend creativity with strategy to help brands stand out and grow.",
+      "I design and build modern, high-converting websites and data-driven solutions that blend creativity with strategy to help brands stand out and grow.",
     heroRightTagline1: "DESIGN THAT",
     heroRightTagline2: "INSPIRES. CODE",
     heroRightTagline3: "THAT PERFORMS.",
@@ -61,7 +61,7 @@ export const portfolioConfig = {
     year: "2026",
     availability: "Available for freelance projects worldwide",
     aboutBio:
-      "I'm Muhammad Usman, a web designer and frontend developer focused on creating modern, responsive, and visually engaging digital experiences. I combine thoughtful design with clean code to help businesses establish a strong online presence.",
+      "I'm Muhammad Usman, a web developer and data science student focused on creating modern, responsive, and visually engaging digital experiences. I combine thoughtful design with clean code and data-driven insights to help businesses establish a strong online presence.",
     stats: [
       { label: "Years Experience", value: "5+" },
       { label: "Projects Completed", value: "40+" },

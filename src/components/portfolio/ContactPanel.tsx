@@ -88,7 +88,7 @@ export default function ContactPanel() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 0.8 }}
-        className="w-full border border-[#796143]/60 rounded-2xl bg-[#141414]/95 shadow-[0_20px_50px_rgba(0,0,0,0.8)] backdrop-blur-md relative overflow-hidden p-6 sm:p-10 md:p-12"
+        className="w-full border border-[#85631A]/60 rounded-2xl bg-[#141414]/95 shadow-[0_20px_50px_rgba(0,0,0,0.8)] backdrop-blur-md relative overflow-hidden p-6 sm:p-10 md:p-12"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center relative z-10">
           {/* Left Side: Headline and Flowing Gold Wave Art */}
@@ -102,7 +102,7 @@ export default function ContactPanel() {
             </div>
 
             {/* Flowing liquid gold ribbon artwork */}
-            <div className="relative w-full h-24 sm:h-28 rounded-xl overflow-hidden border border-[#796143]/30 bg-[#0d0d0d]">
+            <div className="relative w-full h-24 sm:h-28 rounded-xl overflow-hidden border border-[#85631A]/30 bg-[#0d0d0d]">
               <Image
                 src="/images/contact-wave.jpg"
                 alt="Luxury gold wave abstract artwork"
@@ -117,7 +117,7 @@ export default function ContactPanel() {
             <div>
               <button
                 onClick={() => setIsFormOpen(true)}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#C99A5B] bg-[#C99A5B]/10 hover:bg-[#C99A5B] text-[#E8D0B2] hover:text-[#101010] text-xs font-semibold tracking-widest uppercase transition-all duration-300"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#C89520] bg-[#C89520]/10 hover:bg-[#C89520] text-[#E8D0B2] hover:text-[#101010] text-xs font-semibold tracking-widest uppercase transition-all duration-300"
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>DROP A QUICK MESSAGE</span>
@@ -126,26 +126,26 @@ export default function ContactPanel() {
           </div>
 
           {/* Middle Section: Contact Details with Icons */}
-          <div className="lg:col-span-4 flex flex-col space-y-4 lg:border-l lg:border-[#796143]/40 lg:pl-8">
+          <div className="lg:col-span-4 flex flex-col space-y-4 lg:border-l lg:border-[#85631A]/40 lg:pl-8">
             {/* Email */}
             <div
               onClick={() => copyToClipboard(contact.email, "email")}
               className="group flex items-center justify-between p-2.5 rounded-lg hover:bg-[#181818] cursor-pointer transition-colors"
             >
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full border border-[#796143]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C99A5B] transition-colors">
-                  <Mail className="w-3.5 h-3.5 text-[#C99A5B]" />
+                <div className="w-8 h-8 rounded-full border border-[#85631A]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C89520] transition-colors">
+                  <Mail className="w-3.5 h-3.5 text-[#C89520]" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-widest text-[#796143] font-medium">
+                  <span className="text-[10px] uppercase tracking-widest text-[#85631A] font-medium">
                     Email
                   </span>
-                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C99A5B] transition-colors font-mono">
+                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C89520] transition-colors font-mono">
                     {contact.email}
                   </span>
                 </div>
               </div>
-              <div className="text-[#B9AA98] group-hover:text-[#C99A5B] transition-colors text-xs">
+              <div className="text-[#B9AA98] group-hover:text-[#C89520] transition-colors text-xs">
                 {copiedKey === "email" ? (
                   <Check className="w-4 h-4 text-emerald-400" />
                 ) : (
@@ -160,19 +160,19 @@ export default function ContactPanel() {
               className="group flex items-center justify-between p-2.5 rounded-lg hover:bg-[#181818] cursor-pointer transition-colors"
             >
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full border border-[#796143]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C99A5B] transition-colors">
-                  <Phone className="w-3.5 h-3.5 text-[#C99A5B]" />
+                <div className="w-8 h-8 rounded-full border border-[#85631A]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C89520] transition-colors">
+                  <Phone className="w-3.5 h-3.5 text-[#C89520]" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-widest text-[#796143] font-medium">
+                  <span className="text-[10px] uppercase tracking-widest text-[#85631A] font-medium">
                     WhatsApp
                   </span>
-                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C99A5B] transition-colors font-mono">
+                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C89520] transition-colors font-mono">
                     {contact.whatsapp}
                   </span>
                 </div>
               </div>
-              <div className="text-[#B9AA98] group-hover:text-[#C99A5B] transition-colors text-xs">
+              <div className="text-[#B9AA98] group-hover:text-[#C89520] transition-colors text-xs">
                 {copiedKey === "phone" ? (
                   <Check className="w-4 h-4 text-emerald-400" />
                 ) : (
@@ -187,19 +187,19 @@ export default function ContactPanel() {
               className="group flex items-center justify-between p-2.5 rounded-lg hover:bg-[#181818] cursor-pointer transition-colors"
             >
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full border border-[#796143]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C99A5B] transition-colors">
-                  <Globe className="w-3.5 h-3.5 text-[#C99A5B]" />
+                <div className="w-8 h-8 rounded-full border border-[#85631A]/50 bg-[#171717] flex items-center justify-center shrink-0 group-hover:border-[#C89520] transition-colors">
+                  <Globe className="w-3.5 h-3.5 text-[#C89520]" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-widest text-[#796143] font-medium">
+                  <span className="text-[10px] uppercase tracking-widest text-[#85631A] font-medium">
                     Website
                   </span>
-                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C99A5B] transition-colors font-mono">
+                  <span className="text-xs sm:text-[13px] text-[#E8D0B2] group-hover:text-[#C89520] transition-colors font-mono">
                     {contact.website}
                   </span>
                 </div>
               </div>
-              <div className="text-[#B9AA98] group-hover:text-[#C99A5B] transition-colors text-xs">
+              <div className="text-[#B9AA98] group-hover:text-[#C89520] transition-colors text-xs">
                 {copiedKey === "website" ? (
                   <Check className="w-4 h-4 text-emerald-400" />
                 ) : (
@@ -210,11 +210,11 @@ export default function ContactPanel() {
 
             {/* Location */}
             <div className="flex items-center gap-3 p-2.5">
-              <div className="w-8 h-8 rounded-full border border-[#796143]/50 bg-[#171717] flex items-center justify-center shrink-0">
-                <MapPin className="w-3.5 h-3.5 text-[#C99A5B]" />
+              <div className="w-8 h-8 rounded-full border border-[#85631A]/50 bg-[#171717] flex items-center justify-center shrink-0">
+                <MapPin className="w-3.5 h-3.5 text-[#C89520]" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-widest text-[#796143] font-medium">
+                <span className="text-[10px] uppercase tracking-widest text-[#85631A] font-medium">
                   Location
                 </span>
                 <span className="text-xs sm:text-[13px] text-[#E8D0B2] font-mono">
@@ -225,7 +225,7 @@ export default function ContactPanel() {
           </div>
 
           {/* Right Side: LET'S CONNECT & Socials */}
-          <div className="lg:col-span-3 flex flex-col justify-center items-start lg:items-end space-y-4 lg:border-l lg:border-[#796143]/40 lg:pl-8">
+          <div className="lg:col-span-3 flex flex-col justify-center items-start lg:items-end space-y-4 lg:border-l lg:border-[#85631A]/40 lg:pl-8">
             <h3 className="font-bebas text-xl sm:text-2xl tracking-widest text-[#E8D0B2] uppercase">
               {contact.connectTitle}
             </h3>
@@ -238,7 +238,7 @@ export default function ContactPanel() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-[#796143]/60 bg-[#151515] hover:border-[#C99A5B] hover:text-[#C99A5B] hover:scale-110 text-[#E8D0B2] flex items-center justify-center transition-all duration-300 shadow-sm"
+                  className="w-10 h-10 rounded-full border border-[#85631A]/60 bg-[#151515] hover:border-[#C89520] hover:text-[#C89520] hover:scale-110 text-[#E8D0B2] flex items-center justify-center transition-all duration-300 shadow-sm"
                   aria-label={social.name}
                 >
                   {getSocialIcon(social.icon)}
@@ -265,9 +265,9 @@ export default function ContactPanel() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-lg border border-[#796143] rounded-2xl bg-[#141414] p-6 sm:p-8 shadow-2xl z-10"
+              className="relative w-full max-w-lg border border-[#85631A] rounded-2xl bg-[#141414] p-6 sm:p-8 shadow-2xl z-10"
             >
-              <div className="flex items-center justify-between border-b border-[#796143]/40 pb-4 mb-6">
+              <div className="flex items-center justify-between border-b border-[#85631A]/40 pb-4 mb-6">
                 <div>
                   <h3 className="font-bebas text-2xl text-[#E8D0B2] tracking-wider">
                     SEND A MESSAGE
@@ -278,7 +278,7 @@ export default function ContactPanel() {
                 </div>
                 <button
                   onClick={() => setIsFormOpen(false)}
-                  className="text-[#B9AA98] hover:text-[#C99A5B] transition-colors"
+                  className="text-[#B9AA98] hover:text-[#C89520] transition-colors"
                 >
                   ✕
                 </button>
@@ -286,7 +286,7 @@ export default function ContactPanel() {
 
               {isSubmitted ? (
                 <div className="py-8 flex flex-col items-center text-center space-y-3">
-                  <CheckCircle className="w-12 h-12 text-[#C99A5B]" />
+                  <CheckCircle className="w-12 h-12 text-[#C89520]" />
                   <h4 className="font-bebas text-2xl text-[#E8D0B2]">
                     MESSAGE RECEIVED
                   </h4>
@@ -308,7 +308,7 @@ export default function ContactPanel() {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       placeholder="e.g. Alexander Vance"
-                      className="w-full px-4 py-2.5 rounded-lg border border-[#796143]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#796143] focus:outline-none focus:border-[#C99A5B]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#85631A]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#85631A] focus:outline-none focus:border-[#C89520]"
                     />
                   </div>
 
@@ -324,7 +324,7 @@ export default function ContactPanel() {
                         setFormData({ ...formData, email: e.target.value })
                       }
                       placeholder="you@company.com"
-                      className="w-full px-4 py-2.5 rounded-lg border border-[#796143]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#796143] focus:outline-none focus:border-[#C99A5B]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#85631A]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#85631A] focus:outline-none focus:border-[#C89520]"
                     />
                   </div>
 
@@ -340,13 +340,13 @@ export default function ContactPanel() {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       placeholder="Tell me about your brand, project timeline, and design requirements..."
-                      className="w-full px-4 py-2.5 rounded-lg border border-[#796143]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#796143] focus:outline-none focus:border-[#C99A5B] resize-none"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#85631A]/50 bg-[#1a1a1a] text-sm text-[#E8D0B2] placeholder-[#85631A] focus:outline-none focus:border-[#C89520] resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-lg border border-[#C99A5B] bg-[#C99A5B] hover:bg-[#E8D0B2] text-[#101010] text-xs font-bold tracking-widest uppercase transition-all duration-300"
+                    className="w-full py-3 rounded-lg border border-[#C89520] bg-[#C89520] hover:bg-[#E8D0B2] text-[#101010] text-xs font-bold tracking-widest uppercase transition-all duration-300"
                   >
                     SEND INQUIRY
                   </button>

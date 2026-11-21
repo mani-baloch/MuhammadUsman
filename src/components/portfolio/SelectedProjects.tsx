@@ -20,12 +20,12 @@ export default function SelectedProjects() {
         </h2>
 
         {/* Thin Gold Line spanning the gap */}
-        <div className="hidden sm:block flex-1 h-[1px] bg-[#796143]/50 mx-4" />
+        <div className="hidden sm:block flex-1 h-[1px] bg-[#85631A]/50 mx-4" />
 
         {/* View All link */}
         <a
           href="#work"
-          className="group flex items-center gap-1.5 text-xs sm:text-sm font-semibold tracking-wider text-[#C99A5B] hover:text-[#E8D0B2] uppercase transition-colors shrink-0"
+          className="group flex items-center gap-1.5 text-xs sm:text-sm font-semibold tracking-wider text-[#C89520] hover:text-[#E8D0B2] uppercase transition-colors shrink-0"
         >
           <span>VIEW ALL PROJECTS</span>
           <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -45,7 +45,7 @@ export default function SelectedProjects() {
             className="group cursor-pointer flex flex-col"
           >
             {/* Project Thumbnail with fine border and subtle hover scale */}
-            <div className="relative w-full aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/10] rounded-xl overflow-hidden border border-[#796143]/45 bg-[#171717] transition-all duration-500 group-hover:border-[#C99A5B] group-hover:shadow-[0_10px_30px_rgba(201,154,91,0.15)]">
+            <div className="relative w-full aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/10] rounded-xl overflow-hidden border border-[#85631A]/45 bg-[#171717] transition-all duration-500 group-hover:border-[#C89520] group-hover:shadow-[0_10px_30px_rgba(200,149,32,0.2)]">
               <Image
                 src={project.image}
                 alt={`${project.title} — ${project.category}`}
@@ -56,8 +56,8 @@ export default function SelectedProjects() {
 
               {/* Subtle hover overlay with indicator icon */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-[#101010]/90 border border-[#C99A5B] flex items-center justify-center transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 text-[#C99A5B]" />
+                <div className="w-10 h-10 rounded-full bg-[#101010]/90 border border-[#C89520] flex items-center justify-center transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                  <ArrowUpRight className="w-4 h-4 text-[#C89520]" />
                 </div>
               </div>
             </div>
@@ -66,10 +66,10 @@ export default function SelectedProjects() {
             <div className="mt-3.5 space-y-1">
               {/* Number and Title */}
               <div className="flex items-baseline gap-2">
-                <span className="font-bebas text-lg sm:text-xl text-[#C99A5B] font-normal shrink-0">
+                <span className="font-bebas text-lg sm:text-xl text-[#C89520] font-normal shrink-0">
                   {project.number}
                 </span>
-                <h3 className="font-bebas text-base sm:text-lg lg:text-[19px] tracking-wider text-[#E8D0B2] group-hover:text-[#C99A5B] transition-colors truncate">
+                <h3 className="font-bebas text-base sm:text-lg lg:text-[19px] tracking-wider text-[#E8D0B2] group-hover:text-[#C89520] transition-colors truncate">
                   {project.title}
                 </h3>
               </div>
@@ -79,7 +79,7 @@ export default function SelectedProjects() {
                 <p className="text-[11px] sm:text-xs text-[#B9AA98] leading-tight font-sans">
                   {project.category}
                 </p>
-                <p className="text-[10px] sm:text-[11px] font-medium tracking-wide text-[#796143] uppercase leading-tight">
+                <p className="text-[10px] sm:text-[11px] font-medium tracking-wide text-[#85631A] uppercase leading-tight">
                   {project.discipline}
                 </p>
               </div>

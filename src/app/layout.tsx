@@ -23,23 +23,24 @@ const alexBrush = Alex_Brush({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Usman — Creative Web Designer & Frontend Developer",
+  title: "Muhammad Usman — Web Developer & Data Science Student",
   description:
-    "Luxury editorial portfolio of Muhammad Usman, Creative Web Designer & Frontend Developer based in Pakistan. Specializing in modern, high-converting digital experiences, UI/UX design, and clean performant code.",
+    "Portfolio of Muhammad Usman, Web Developer & Data Science Student based in Pakistan. Specializing in modern web applications, data-driven solutions, and clean performant code.",
   keywords: [
     "Muhammad Usman",
-    "Web Designer",
+    "Web Developer",
+    "Data Science Student",
     "Frontend Developer",
-    "UI/UX Designer",
-    "Luxury Portfolio",
+    "Full Stack Developer",
+    "Portfolio",
     "Next.js Developer",
     "Pakistan",
   ],
   authors: [{ name: "Muhammad Usman" }],
   openGraph: {
-    title: "Muhammad Usman — Creative Web Designer & Frontend Developer",
+    title: "Muhammad Usman — Web Developer & Data Science Student",
     description:
-      "I design and build modern, high-converting websites that blend creativity with strategy to help brands stand out and grow.",
+      "I design and build modern, high-converting websites and data-driven solutions that blend creativity with strategy to help brands stand out and grow.",
     type: "website",
     locale: "en_US",
   },
@@ -58,7 +59,7 @@ export default function RootLayout({
     >
       <body
         suppressHydrationWarning
-        className="min-h-screen bg-[#101010] text-[#E8D0B2] antialiased selection:bg-[#C99A5B] selection:text-[#101010]"
+        className="min-h-screen bg-[#101010] text-[#E8D0B2] antialiased selection:bg-[#C89520] selection:text-[#101010]"
       >
         {children}
       </body>

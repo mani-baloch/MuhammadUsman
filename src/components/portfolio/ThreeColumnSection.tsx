@@ -20,19 +20,19 @@ export default function ThreeColumnSection() {
   const getServiceIcon = (name: string) => {
     switch (name) {
       case "Layout":
-        return <Layout className="w-4 h-4 text-[#C99A5B]" />;
+        return <Layout className="w-4 h-4 text-[#C89520]" />;
       case "PenTool":
-        return <Palette className="w-4 h-4 text-[#C99A5B]" />;
+        return <Palette className="w-4 h-4 text-[#C89520]" />;
       case "Sparkles":
-        return <Sparkles className="w-4 h-4 text-[#C99A5B]" />;
+        return <Sparkles className="w-4 h-4 text-[#C89520]" />;
       case "Code":
-        return <Code2 className="w-4 h-4 text-[#C99A5B]" />;
+        return <Code2 className="w-4 h-4 text-[#C89520]" />;
       case "Layers":
-        return <Layers className="w-4 h-4 text-[#C99A5B]" />;
+        return <Layers className="w-4 h-4 text-[#C89520]" />;
       case "ShieldCheck":
-        return <ShieldCheck className="w-4 h-4 text-[#C99A5B]" />;
+        return <ShieldCheck className="w-4 h-4 text-[#C89520]" />;
       default:
-        return <Sparkles className="w-4 h-4 text-[#C99A5B]" />;
+        return <Sparkles className="w-4 h-4 text-[#C89520]" />;
     }
   };
 
@@ -42,7 +42,7 @@ export default function ThreeColumnSection() {
       case "figma":
         return (
           <svg
-            className="w-5 h-5 text-[#C99A5B] fill-current"
+            className="w-5 h-5 text-[#C89520] fill-current"
             viewBox="0 0 38 57"
           >
             <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" />
@@ -55,7 +55,7 @@ export default function ThreeColumnSection() {
       case "webflow":
         return (
           <svg
-            className="w-5 h-5 text-[#C99A5B] fill-current"
+            className="w-5 h-5 text-[#C89520] fill-current"
             viewBox="0 0 100 100"
           >
             <path d="M92 34.6c-.6 0-1.1.2-1.5.7l-15.6 19.3-8.8-19.3c-.4-.9-1.2-1.4-2.2-1.4h-5.2c-.6 0-1.1.3-1.4.8l-12.7 20-8.8-20c-.4-.9-1.2-1.4-2.2-1.4H8c-.8 0-1.4.7-1.4 1.5 0 .2 0 .4.1.6l17.7 34.5c.4.9 1.2 1.4 2.2 1.4h7.5c.7 0 1.3-.4 1.6-1l10.8-17.7 6.9 17.6c.4.9 1.2 1.4 2.2 1.4h7.7c.7 0 1.3-.4 1.6-1l28.6-35.4c.5-.7 0-1.5-.7-1.5z" />
@@ -64,7 +64,7 @@ export default function ThreeColumnSection() {
       case "wordpress":
         return (
           <svg
-            className="w-5 h-5 text-[#C99A5B] fill-current"
+            className="w-5 h-5 text-[#C89520] fill-current"
             viewBox="0 0 122.5 122.5"
           >
             <path d="M61.3 0C27.4 0 0 27.4 0 61.3c0 33.8 27.4 61.3 61.3 61.3 33.8 0 61.3-27.4 61.3-61.3C122.5 27.4 95.1 0 61.3 0zm0 116.7c-30.6 0-55.5-24.8-55.5-55.5 0-12.6 4.2-24.3 11.4-33.6l32.2 88.3c-8.8 4.6-18.7 7.2-29.2 7.2l1.1-6.4zm44.1-21.9l-19.3-56c4.6-.2 8.7-.6 8.7-.6 2.6-.2 2.3-4-.3-4 0 0-7.8.6-12.9.6-4.8 0-12.8-.6-12.8-.6-2.6 0-2.8 3.8-.3 4 0 0 3.8.5 8.1.6l12.1 33.1-17.2 51.5c-11.2-6.5-19.5-16.7-23.3-28.9L58.5 39.5c4.6-.2 8.7-.6 8.7-.6 2.6-.2 2.3-4-.3-4 0 0-7.8.6-12.8.6-4.8 0-12.9-.6-12.9-.6-2.6 0-2.8 3.8-.3 4 0 0 3.8.5 8.1.6l20.4 56.1c-14.7 9.8-32.2 15.6-51.1 15.6 0 0 24.3 3.8 46.5-6.6l17.7-51.2 16.9 46.5c-4 2.8-8.4 5.1-13.2 6.7 18.2-3.8 33.5-14.7 42.4-29.8z" />
@@ -72,24 +72,24 @@ export default function ThreeColumnSection() {
         );
       case "photoshop":
         return (
-          <span className="font-bebas text-lg font-bold text-[#C99A5B] tracking-normal">
+          <span className="font-bebas text-lg font-bold text-[#C89520] tracking-normal">
             Ps
           </span>
         );
       case "illustrator":
         return (
-          <span className="font-bebas text-lg font-bold text-[#C99A5B] tracking-normal">
+          <span className="font-bebas text-lg font-bold text-[#C89520] tracking-normal">
             Ai
           </span>
         );
       case "gsap":
         return (
-          <span className="font-bebas text-base font-bold text-[#C99A5B] tracking-widest">
+          <span className="font-bebas text-base font-bold text-[#C89520] tracking-widest">
             GSAP
           </span>
         );
       default:
-        return <Sparkles className="w-4 h-4 text-[#C99A5B]" />;
+        return <Sparkles className="w-4 h-4 text-[#C89520]" />;
     }
   };
 
@@ -112,7 +112,7 @@ export default function ThreeColumnSection() {
             <h3 className="font-bebas text-2xl sm:text-3xl tracking-widest text-[#E8D0B2] uppercase">
               SERVICES
             </h3>
-            <span className="text-[#C99A5B] text-sm">✦</span>
+            <span className="text-[#C89520] text-sm">✦</span>
           </div>
 
           {/* Service items */}
@@ -123,13 +123,13 @@ export default function ThreeColumnSection() {
                 className="group flex items-start gap-3.5 transition-all duration-300"
               >
                 {/* Icon box */}
-                <div className="w-8 h-8 rounded-lg border border-[#796143]/50 bg-[#161616] flex items-center justify-center shrink-0 group-hover:border-[#C99A5B] group-hover:bg-[#C99A5B]/10 transition-all duration-300">
+                <div className="w-8 h-8 rounded-lg border border-[#85631A]/50 bg-[#161616] flex items-center justify-center shrink-0 group-hover:border-[#C89520] group-hover:bg-[#C89520]/10 transition-all duration-300">
                   {getServiceIcon(service.iconName)}
                 </div>
 
                 {/* Content */}
                 <div className="flex flex-col space-y-0.5">
-                  <h4 className="font-bebas text-base sm:text-lg tracking-wider text-[#E8D0B2] group-hover:text-[#C99A5B] transition-colors uppercase">
+                  <h4 className="font-bebas text-base sm:text-lg tracking-wider text-[#E8D0B2] group-hover:text-[#C89520] transition-colors uppercase">
                     {service.title}
                   </h4>
                   <p className="text-xs text-[#B9AA98] leading-relaxed font-sans">
@@ -148,7 +148,7 @@ export default function ThreeColumnSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="flex flex-col space-y-6 md:border-l md:border-[#796143]/40 md:px-6 lg:px-8"
+          className="flex flex-col space-y-6 md:border-l md:border-[#85631A]/40 md:px-6 lg:px-8"
         >
           {/* Header */}
           <div className="flex items-center gap-2 pb-2">
@@ -165,7 +165,7 @@ export default function ThreeColumnSection() {
                 className="group flex flex-col items-center text-center cursor-default"
               >
                 {/* Circular container */}
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-[#796143]/60 bg-[#151515] flex items-center justify-center group-hover:border-[#C99A5B] group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(201,154,91,0.2)] transition-all duration-300">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-[#85631A]/60 bg-[#151515] flex items-center justify-center group-hover:border-[#C89520] group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(200,149,32,0.25)] transition-all duration-300">
                   {renderToolIcon(tool)}
                 </div>
 
@@ -185,14 +185,14 @@ export default function ThreeColumnSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex flex-col space-y-6 md:border-l md:border-[#796143]/40 md:pl-6 lg:pl-8"
+          className="flex flex-col space-y-6 md:border-l md:border-[#85631A]/40 md:pl-6 lg:pl-8"
         >
           {/* Header */}
           <div className="flex items-center gap-2 pb-2">
             <h3 className="font-bebas text-2xl sm:text-3xl tracking-widest text-[#E8D0B2] uppercase">
               TESTIMONIALS
             </h3>
-            <span className="text-[#C99A5B] text-sm">✦</span>
+            <span className="text-[#C89520] text-sm">✦</span>
           </div>
 
           {/* Testimonial entries */}
@@ -200,10 +200,10 @@ export default function ThreeColumnSection() {
             {testimonials.map((item) => (
               <div
                 key={item.id}
-                className="flex items-start gap-4 p-4 rounded-xl border border-[#796143]/30 bg-[#151515]/60 hover:border-[#796143]/70 transition-all duration-300 group"
+                className="flex items-start gap-4 p-4 rounded-xl border border-[#85631A]/30 bg-[#151515]/60 hover:border-[#85631A]/70 transition-all duration-300 group"
               >
                 {/* Circular client portrait avatar */}
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#796143]/70 shrink-0 mt-0.5 group-hover:border-[#C99A5B] transition-colors">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#85631A]/70 shrink-0 mt-0.5 group-hover:border-[#C89520] transition-colors">
                   <Image
                     src={item.avatar}
                     alt={item.name}
@@ -223,7 +223,7 @@ export default function ThreeColumnSection() {
                     <span className="text-xs font-semibold text-[#E8D0B2] block tracking-wide">
                       — {item.name}
                     </span>
-                    <span className="text-[11px] font-medium text-[#796143] block">
+                    <span className="text-[11px] font-medium text-[#85631A] block">
                       {item.role}, {item.company}
                     </span>
                   </div>

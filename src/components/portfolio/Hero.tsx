@@ -38,13 +38,13 @@ export default function Hero() {
           className="absolute top-0 sm:-top-2 md:-top-4 z-10 w-[320px] sm:w-[410px] md:w-[520px] lg:w-[600px] xl:w-[640px] h-[430px] sm:h-[550px] md:h-[680px] lg:h-[760px] xl:h-[820px] pointer-events-none"
         >
           {/* Subtle warm backlight glow behind subject */}
-          <div className="absolute inset-0 -top-8 bg-gradient-to-b from-[#C99A5B]/20 via-transparent to-transparent blur-3xl rounded-full transform -translate-y-6" />
+          <div className="absolute inset-0 -top-8 bg-gradient-to-b from-[#C89520]/20 via-transparent to-transparent blur-3xl rounded-full transform -translate-y-6" />
 
           {/* Portrait Image with natural gradient blend into the dark canvas */}
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero-portrait-styled.png"
-              alt="Muhammad Usman — Web Designer & Digital Creator"
+              src="/images/hero-portrait-cutout.png"
+              alt="Muhammad Usman — Web Developer & Data Science Student"
               fill
               priority
               sizes="(max-width: 640px) 320px, (max-width: 768px) 410px, (max-width: 1024px) 520px, 640px"
@@ -65,7 +65,7 @@ export default function Hero() {
             className="md:col-span-5 lg:col-span-4 flex flex-col text-left space-y-3"
           >
             <div>
-              <span className="block font-bebas text-lg md:text-xl tracking-[0.25em] text-[#C99A5B] uppercase leading-none">
+              <span className="block font-bebas text-lg md:text-xl tracking-[0.25em] text-[#C89520] uppercase leading-none">
                 {profile.heroLeftSubtitle}
               </span>
               <h2 className="font-bebas text-2xl md:text-3xl lg:text-[34px] tracking-widest text-[#E8D0B2] uppercase leading-tight mt-1">
@@ -79,7 +79,7 @@ export default function Hero() {
 
             {/* Signature Area */}
             <div className="pt-2">
-              <span className="font-signature text-3xl md:text-4xl lg:text-[42px] text-[#C99A5B] block transform -rotate-1 origin-left select-none drop-shadow-[0_2px_10px_rgba(201,154,91,0.2)]">
+              <span className="font-signature text-3xl md:text-4xl lg:text-[42px] text-[#C89520] block transform -rotate-1 origin-left select-none drop-shadow-[0_2px_10px_rgba(200,149,32,0.25)]">
                 {profile.name}
               </span>
               <span className="block text-[9px] md:text-[10px] font-semibold tracking-[0.35em] text-[#B9AA98]/80 uppercase mt-1">
@@ -100,7 +100,7 @@ export default function Hero() {
           >
             {/* Tagline with accent line */}
             <div className="flex flex-col items-start md:items-end">
-              <span className="w-10 h-[2px] bg-[#C99A5B] mb-2.5 inline-block" />
+              <span className="w-10 h-[2px] bg-[#C89520] mb-2.5 inline-block" />
               <p className="text-xs md:text-sm font-semibold tracking-[0.16em] text-[#E8D0B2] uppercase leading-relaxed font-sans max-w-[240px]">
                 {profile.heroRightTagline1}
                 <br />
@@ -112,12 +112,12 @@ export default function Hero() {
 
             {/* Location & Availability */}
             <div className="flex items-center md:justify-end gap-2.5 pt-2">
-              <div className="w-6 h-6 rounded-full border border-[#796143]/60 bg-[#151515] flex items-center justify-center shrink-0">
-                <MapPin className="w-3.5 h-3.5 text-[#C99A5B]" />
+              <div className="w-6 h-6 rounded-full border border-[#85631A]/60 bg-[#151515] flex items-center justify-center shrink-0">
+                <MapPin className="w-3.5 h-3.5 text-[#C89520]" />
               </div>
               <div className="text-[10px] md:text-[11px] font-medium tracking-[0.2em] text-[#B9AA98] uppercase leading-tight text-left md:text-right">
                 <div>BASED IN PAKISTAN</div>
-                <div className="text-[#C99A5B]/90 font-semibold">
+                <div className="text-[#C89520]/90 font-semibold">
                   AVAILABLE WORLDWIDE
                 </div>
               </div>

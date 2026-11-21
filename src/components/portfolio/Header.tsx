@@ -11,10 +11,10 @@ export default function Header() {
       {/* Top Left: Monogram Logo & Title */}
       <div className="flex items-center gap-4 group cursor-pointer">
         {/* Luxury Gold Monogram Emblem "MU" */}
-        <div className="relative w-11 h-11 flex items-center justify-center rounded-lg border border-[#796143]/60 bg-[#151515] group-hover:border-[#C99A5B] transition-all duration-300 shadow-md">
+        <div className="relative w-11 h-11 flex items-center justify-center rounded-lg border border-[#85631A]/60 bg-[#151515] group-hover:border-[#C89520] transition-all duration-300 shadow-md">
           <svg
             viewBox="0 0 100 100"
-            className="w-7 h-7 text-[#C99A5B] fill-none stroke-current"
+            className="w-7 h-7 text-[#C89520] fill-none stroke-current"
             strokeWidth="3.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -29,8 +29,8 @@ export default function Header() {
               strokeWidth="3.2"
             />
             {/* Refined cross bar & flourish accents */}
-            <circle cx="22" cy="25" r="2.5" fill="#C99A5B" />
-            <circle cx="54" cy="25" r="2.5" fill="#C99A5B" />
+            <circle cx="22" cy="25" r="2.5" fill="#C89520" />
+            <circle cx="54" cy="25" r="2.5" fill="#C89520" />
             <circle cx="76" cy="38" r="2" fill="#E8D0B2" />
           </svg>
         </div>
@@ -48,8 +48,8 @@ export default function Header() {
 
       {/* Top Right: Gold Line and Year */}
       <div className="flex items-center gap-3">
-        <span className="hidden sm:inline-block w-12 md:w-20 h-[1px] bg-[#C99A5B]/70" />
-        <span className="text-sm md:text-base font-semibold tracking-[0.25em] text-[#C99A5B] font-mono">
+        <span className="hidden sm:inline-block w-12 md:w-20 h-[1px] bg-[#C89520]/70" />
+        <span className="text-sm md:text-base font-semibold tracking-[0.25em] text-[#C89520] font-mono">
           {profile.year}
         </span>
       </div>
